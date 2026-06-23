@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio | Comley Creative Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-400 selection:text-zinc-950 relative min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <div class="absolute top-0 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <header class="sticky top-0 z-30 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-zinc-950 font-black text-xl shadow-lg shadow-emerald-500/10">
+                    EC
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-widest text-white uppercase">Ethan Comley</h1>
+                    <span class="text-zinc-500 text-xs font-mono block -mt-1">Comley Creative Studio</span>
+                </div>
+            </div>
+            <nav class="flex flex-wrap items-center gap-1.5 bg-zinc-900/50 p-1 rounded-xl border border-zinc-800">
+                <a href="index.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Tech & Web</a>
+                <a href="photography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-amber-400 text-zinc-950 shadow-md shadow-amber-400/20">Photography</a>
+                <a href="videography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Videography</a>
+                <a href="resume.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Resume Profile</a>
+                <a href="index.html#contact" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Inquire</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 w-full flex-grow space-y-16 animate-fadeIn">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-2xl space-y-4">
+                <span class="text-xs uppercase font-mono tracking-widest text-amber-400 font-bold px-3 py-1 bg-amber-500/10 rounded-full inline-block">Comley Creative Studio</span>
+                <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight">Visual Depth & Structural Form.</h2>
+                <p class="text-zinc-400 text-sm md:text-base leading-relaxed">A comprehensive collection showcasing my highest fidelity portfolio work alongside live interactive frames from my local community channels.</p>
+            </div>
+            <a href="https://www.instagram.com/comley_creative" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-3 bg-gradient-to-tr from-purple-600 to-pink-500 text-white font-bold px-5 py-4 rounded-2xl hover:opacity-95 transition shadow-lg shadow-pink-500/10 shrink-0 text-center justify-center overflow-hidden">
+                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                <div class="text-left"><span class="block text-[10px] uppercase font-mono tracking-widest text-pink-200 font-bold">Follow Live Feed</span><span class="text-sm font-black">@comley_creative</span></div>
+              </a>
+        </div>
+
+        <div class="space-y-6 pt-4 border-t border-zinc-900">
+            <div class="flex justify-between items-center">
+                <h3 class="text-xs uppercase font-mono tracking-widest text-zinc-400 font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>I. Curated HD Portfolios</h3>
+                <span class="text-xs text-zinc-600">Upstate SC Selected Series</span>
+            </div>
+            <div class="flex flex-wrap gap-2 pb-4">
+                <button onclick="filterHD('all')" id="btn-all" class="hd-btn text-xs px-3.5 py-1.5 rounded-lg border bg-amber-400 text-zinc-950 border-amber-400 font-bold uppercase tracking-wider">All Frames</button>
+                <button onclick="filterHD('automotive')" id="btn-automotive" class="hd-btn text-xs px-3.5 py-1.5 rounded-lg border text-zinc-400 border-zinc-900 hover:text-white bg-zinc-900/30 uppercase tracking-wider">Automotive</button>
+                <button onclick="filterHD('street')" id="btn-street" class="hd-btn text-xs px-3.5 py-1.5 rounded-lg border text-zinc-400 border-zinc-900 hover:text-white bg-zinc-900/30 uppercase tracking-wider">Greenville Streets</button>
+                <button onclick="filterHD('nature')" id="btn-nature" class="hd-btn text-xs px-3.5 py-1.5 rounded-lg border text-zinc-400 border-zinc-900 hover:text-white bg-zinc-900/30 uppercase tracking-wider">Ridge Landscapes</button>
+            </div>
+            <div id="hd-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="hd-item group cursor-pointer bg-zinc-900/10 border border-zinc-900 rounded-xl overflow-hidden hover:border-amber-400/40 transition" data-cat="nature" onclick="openLightbox('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80', 'Upstate Dusk', 'Sony a7IV • 35mm f/2.0')">
+                    <div class="relative aspect-square overflow-hidden bg-zinc-950"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Landscape" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter saturate-[0.85] group-hover:saturate-100" /></div>
+                    <div class="p-4 border-t border-zinc-900 flex justify-between items-center"><div><h5 class="text-sm font-bold text-white">Upstate Dusk</h5><p class="text-[10px] font-mono text-zinc-500">Sony a7IV • 35mm f/2.0</p></div><span class="text-[10px] font-mono text-amber-400 font-bold bg-zinc-900 px-2 py-1 rounded border border-zinc-800">Enlarge</span></div>
+                </div>
+                <div class="hd-item group cursor-pointer bg-zinc-900/10 border border-zinc-900 rounded-xl overflow-hidden hover:border-amber-400/40 transition" data-cat="automotive" onclick="openLightbox('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80', 'Midnight Raw Exhaust', 'Sony a7R III • 85mm f/1.4')">
+                    <div class="relative aspect-square overflow-hidden bg-zinc-950"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Car" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter saturate-[0.85] group-hover:saturate-100" /></div>
+                    <div class="p-4 border-t border-zinc-900 flex justify-between items-center"><div><h5 class="text-sm font-bold text-white">Midnight Raw Exhaust</h5><p class="text-[10px] font-mono text-zinc-500">Sony a7R III • 85mm f/1.4</p></div><span class="text-[10px] font-mono text-amber-400 font-bold bg-zinc-900 px-2 py-1 rounded border border-zinc-800">Enlarge</span></div>
+                </div>
+                <div class="hd-item group cursor-pointer bg-zinc-900/10 border border-zinc-900 rounded-xl overflow-hidden hover:border-amber-400/40 transition" data-cat="street" onclick="openLightbox('https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?auto=format&fit=crop&w=800&q=80', 'Greenville Wet Glow', 'Sony a7IV • 50mm f/1.2')">
+                    <div class="relative aspect-square overflow-hidden bg-zinc-950"><img src="https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?auto=format&fit=crop&w=800&q=80" alt="Street" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter saturate-[0.85] group-hover:saturate-100" /></div>
+                    <div class="p-4 border-t border-zinc-900 flex justify-between items-center"><div><h5 class="text-sm font-bold text-white">Greenville Wet Glow</h5><p class="text-[10px] font-mono text-zinc-500">Sony a7IV • 50mm f/1.2</p></div><span class="text-[10px] font-mono text-amber-400 font-bold bg-zinc-900 px-2 py-1 rounded border border-zinc-800">Enlarge</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-6 pt-10 border-t border-zinc-900">
+            <div>
+                <h3 class="text-xs uppercase font-mono tracking-widest text-zinc-400 font-bold flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-pink-500 animate-pulse"></span>II. Live Instagram Feed</h3>
+                <p class="text-zinc-500 text-xs mt-1">Automatic ingestion sync via linked cloud endpoints</p>
+            </div>
+            <div id="instagram-feed-grid" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="col-span-full text-center py-12 text-zinc-500 font-mono text-xs">Initializing secure Behold API payload tunnel...</div>
+              </div>
+        </div>
+      </main>
+
+      {/* DYNAMIC COMPONENT LIGHTBOX FRAME */}
+      <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 md:p-10 backdrop-blur-md">
+          <button onclick="closeLightbox()" class="absolute top-6 right-6 text-zinc-400 hover:text-white bg-zinc-900/80 p-3 rounded-full border border-zinc-800">✕</button>
+          <div class="max-w-4xl w-full flex flex-col md:flex-row bg-zinc-950 rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
+              <div class="flex-1 bg-black flex items-center justify-center max-h-[60vh] md:max-h-[80vh]">
+                  <img id="lightbox-img" src="" alt="Focus View" class="object-contain w-full h-full" />
+              </div>
+              <div class="p-6 md:w-80 bg-zinc-900 flex flex-col justify-between">
+                  <div>
+                      <span class="text-[10px] uppercase font-bold text-amber-400 tracking-widest font-mono">Comley Creative Asset</span>
+                      <h3 id="lightbox-title" class="text-2xl font-black text-white mt-1"></h3>
+                      <p id="lightbox-meta" class="text-zinc-500 text-[11px] mt-6 font-mono"></p>
+                  </div>
+                  <button onclick="closeLightbox()" class="w-full mt-6 bg-zinc-800 hover:bg-zinc-700 text-white text-xs py-2.5 rounded-lg font-bold uppercase transition">Close</button>
+              </div>
+          </div>
+      </div>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-1">
+                <h5 class="text-sm font-bold text-white uppercase tracking-wider font-mono">Ethan Comley Portfolio System</h5>
+                <p class="text-xs text-zinc-500 leading-relaxed">Designed completely custom for free hosting on Cloudflare Pages. Secure, fast, and optimized.</p>
+            </div>
+            <div class="text-xs text-zinc-500 font-mono"><span>© 2026 Ethan Comley • Greenville, SC</span></div>
+        </div>
+    </footer>
+
+    <script>
+        function filterHD(cat) {
+            const items = document.querySelectorAll('.hd-item');
+            items.forEach(i => {
+                if (cat === 'all' || i.getAttribute('data-cat') === cat) i.classList.remove('hidden');
+                else i.classList.add('hidden');
+            });
+            document.querySelectorAll('.hd-btn').forEach(b => {
+                b.classList.remove('bg-amber-400', 'text-zinc-950', 'font-bold');
+                b.classList.add('text-zinc-400', 'border-zinc-900');
+            });
+            document.getElementById(`btn-${cat}`).classList.add('bg-amber-400', 'text-zinc-950', 'font-bold');
+        }
+        function openLightbox(url, title, meta) {
+            document.getElementById('lightbox-img').src = url;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-meta').innerText = meta;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+        function closeLightbox() { document.getElementById('lightbox-modal').classList.add('hidden'); }
+
+        // AUTOMATED RECONCILIATION FOR INSTAGRAM VIA BEHOLD ENDPOINT
+        const BEHOLD_API_URL = "https://feeds.behold.so/zU5dCemyzc2BA3BTbdls";
+        fetch(BEHOLD_API_URL)
+            .then(res => res.json())
+            .then(data => {
+                const grid = document.getElementById('instagram-feed-grid');
+                grid.innerHTML = ''; 
+                if(!Array.isArray(data)) return;
+                data.forEach(item => {
+                    const caption = item.caption || "Comley Creative Frame";
+                    const date = item.timestamp ? new Date(item.timestamp).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'}) : "Recent";
+                    const mediaUrl = item.mediaUrl || item.media_url || item.thumbnailUrl || item.thumbnail_url;
+                    const permalink = item.permalink || "https://instagram.com/comley_creative";
+                    
+                    const template = `
+                        <div class="group relative bg-zinc-900/40 border border-zinc-900 rounded-2xl overflow-hidden p-3 flex flex-col justify-between h-[520px] hover:border-pink-500/40 transition duration-300">
+                            <div class="relative aspect-square overflow-hidden bg-zinc-950 rounded-xl">
+                                <img src="${mediaUrl}" alt="Instagram" class="w-full h-full object-cover group-hover:scale-102 transition duration-500" />
+                            </div>
+                            <div class="px-1.5 pt-3 pb-1 flex flex-col gap-1.5">
+                                <p class="text-zinc-300 text-xs leading-relaxed line-clamp-2 h-8 font-medium">${caption}</p>
+                                <div class="flex justify-between items-center text-[10px] font-mono text-zinc-500 mt-1">
+                                    <span>Posted: ${date}</span>
+                                    <a href="${permalink}" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-pink-300 font-bold transition">Instagram ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    grid.innerHTML += template;
+                });
+            }).catch(e => {
+                document.getElementById('instagram-feed-grid').innerHTML = '<div class="col-span-full text-center text-zinc-600 font-mono text-xs">Automated edge bridge offline. Launch profile link to inspect feed assets manually.</div>';
+            });
+    </script>
+</body>
+</html>
