@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Comley | Tech & Web Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-400 selection:text-zinc-950 relative min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <div class="absolute top-0 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/2 left-10 w-96 h-96 bg-amber-500/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <header class="sticky top-0 z-30 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-zinc-950 font-black text-xl shadow-lg shadow-emerald-500/10">
+                    EC
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-widest text-white uppercase">Ethan Comley</h1>
+                    <span class="text-zinc-500 text-xs font-mono block -mt-1">Comley Creative Studio</span>
+                </div>
+            </div>
+            <nav class="flex flex-wrap items-center gap-1.5 bg-zinc-900/50 p-1 rounded-xl border border-zinc-800">
+                <a href="index.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-emerald-400 text-zinc-950 shadow-md shadow-emerald-400/10">Tech & Web</a>
+                <a href="photography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Photography</a>
+                <a href="videography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Videography</a>
+                <a href="resume.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Resume Profile</a>
+                <a href="#contact" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Inquire</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 w-full flex-grow space-y-16 animate-fadeIn">
+        <div class="max-w-3xl space-y-6">
+            <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase px-3 py-1 rounded-full">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Active Technical Solutions Lead
+            </div>
+            <h2 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-tight">
+                Empowering teams through <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">solid infrastructure</span> & clean design.
+              </h2>
+              <p class="text-zinc-400 text-base md:text-lg leading-relaxed">
+                As a hybrid Technical Specialist, I combine operations management with programming skills to solve complex organizational bottlenecks. Whether acting as CTO & Co-Owner of <strong class="text-white font-semibold">Pleasantburg Beverage Company</strong>, advising C-Suite executives at <strong className="text-white font-semibold">6AM City</strong>, scaling hardware infrastructure, or executing clean front-end interfaces.
+              </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
+                <div class="bg-zinc-900/30 border border-zinc-900 p-4 rounded-xl">
+                    <span class="block text-xl font-bold text-white tracking-tight">130+</span>
+                    <span class="block text-[11px] font-mono text-zinc-500 mt-1 uppercase">Active Staff Supported</span>
+                </div>
+                <div class="bg-zinc-900/30 border border-zinc-900 p-4 rounded-xl">
+                    <span class="block text-xl font-bold text-white tracking-tight">CTO / Owner</span>
+                    <span class="block text-[11px] font-mono text-zinc-500 mt-1 uppercase">Operations Leader</span>
+                </div>
+                <div class="bg-zinc-900/30 border border-zinc-900 p-4 rounded-xl">
+                    <span class="block text-xl font-bold text-white tracking-tight">6+ Years</span>
+                    <span class="block text-[11px] font-mono text-zinc-500 mt-1 uppercase">Tech Operations Experience</span>
+                </div>
+                <div class="bg-zinc-900/30 border border-zinc-900 p-4 rounded-xl">
+                    <span class="block text-xl font-bold text-white tracking-tight">Apple Specialist</span>
+                    <span class="block text-[11px] font-mono text-zinc-500 mt-1 uppercase">Diagnostics Specialist</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="border-b border-zinc-900 pb-4 flex justify-between items-center">
+                <h3 class="text-lg font-bold text-zinc-300 uppercase tracking-wider font-mono">Custom Web Systems</h3>
+                <span class="text-xs text-zinc-500">Click card parameters to learn more</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div onclick="openProjectModal('smileys')" class="group cursor-pointer bg-zinc-900/15 border border-zinc-900 rounded-xl p-6 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between h-full">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest">Creative Direction & E-Commerce</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">Smiley's Infusions Custom Store</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">End-to-end design and Shopify store engineering for a premium regional infusion brand. Features custom configurations and optimized checkout pipelines.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900 space-y-4">
+                        <div class="flex flex-wrap gap-1.5"><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Shopify Liquid</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Can Design</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">E-Commerce</span></div>
+                        <div class="bg-emerald-500/5 text-emerald-300 font-mono text-[11px] p-2.5 rounded border border-emerald-500/10 flex justify-between items-center"><span>Metric:</span><span class="font-bold">Launched Smiley's Electric Lemonade Brand</span></div>
+                    </div>
+                </div>
+                <div onclick="openProjectModal('matrix')" class="group cursor-pointer bg-zinc-900/15 border border-zinc-900 rounded-xl p-6 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between h-full">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest">Operations / IT Solutions</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">6AM Internal Asset Matrix</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">An automated inventory and onboarding dashboard engineered to scale resource management for 130+ remote personnel.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900 space-y-4">
+                        <div class="flex flex-wrap gap-1.5"><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Tailwind CSS</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">JavaScript</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Google Cloud API</span></div>
+                        <div class="bg-emerald-500/5 text-emerald-300 font-mono text-[11px] p-2.5 rounded border border-emerald-500/10 flex justify-between items-center"><span>Metric:</span><span class="font-bold">Saved 12+ hours/week in IT audits</span></div>
+                    </div>
+                </div>
+                <div onclick="openProjectModal('sentry')" class="group cursor-pointer bg-zinc-900/15 border border-zinc-900 rounded-xl p-6 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between h-full">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-widest">Information Security</span>
+                        <h4 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">Sentry Core System Audit</h4>
+                        <p class="text-zinc-400 text-xs leading-relaxed">A lightweight administrative interface for monitoring corporate security compliance, active directory endpoints, and team software integrations.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900 space-y-4">
+                        <div class="flex flex-wrap gap-1.5"><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Node.js</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Docker</span><span class="text-[10px] font-mono bg-zinc-950 text-zinc-500 px-2 py-0.5 rounded">Rest APIs</span></div>
+                        <div class="bg-emerald-500/5 text-emerald-300 font-mono text-[11px] p-2.5 rounded border border-emerald-500/10 flex justify-between items-center"><span>Metric:</span><span class="font-bold">Protects 130+ company machines</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="max-w-2xl mx-auto space-y-8 pt-12">
+            <div class="space-y-4 text-center sm:text-left">
+                <span class="text-xs uppercase font-mono tracking-widest text-emerald-400 font-bold px-3 py-1 bg-emerald-500/10 rounded-full inline-block">Start a Conversation</span>
+                <h2 class="text-4xl font-black text-white tracking-tight">Let's build or film together.</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed">Whether you need technical consulting to scale infrastructure or e-commerce development frameworks—get in touch today.</p>
+            </div>
+            <form id="contact-form" class="bg-zinc-900/20 border border-zinc-900 p-6 md:p-8 rounded-2xl space-y-6">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label class="text-xs font-mono uppercase text-zinc-400 font-bold">Your Name</label>
+                        <input type="text" required id="form-name" placeholder="Enter name" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-emerald-400 transition" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-mono uppercase text-zinc-400 font-bold">Inquiry Type</label>
+                        <select class="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-emerald-400 transition">
+                            <option>Web Dev & Architecture</option>
+                            <option>IT & Operations Systems</option>
+                            <option>Photography / Filmography</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label class="text-xs font-mono uppercase text-zinc-400 font-bold">Your Message</label>
+                    <textarea required id="form-message" rows="4" placeholder="Tell me about your tech or media specs..." class="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-emerald-400 transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-tr from-emerald-500 to-teal-400 hover:opacity-90 text-zinc-950 font-bold py-3.5 rounded-xl text-xs uppercase tracking-widest transition shadow-lg shadow-emerald-500/10">Send Request</button>
+                <div id="form-success" class="hidden bg-emerald-500/10 text-emerald-300 font-mono text-xs p-4 rounded-xl border border-emerald-500/20 text-center animate-pulse">✓ Connection request processed successfully!</div>
+            </form>
+        </div>
+    </main>
+
+    <div id="project-modal" class="hidden fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 md:p-10 backdrop-blur-md">
+        <div class="max-w-2xl w-full bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl p-6 md:p-8 space-y-6 relative">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-xl">✕</button>
+            <div>
+                <span id="modal-tag" class="text-xs text-emerald-400 font-mono font-bold tracking-wider uppercase"></span>
+                <h3 id="modal-title" class="text-3xl font-black text-white mt-1"></h3>
+            </div>
+            <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800">
+                <span class="text-[10px] uppercase text-zinc-500 font-mono tracking-widest block mb-1">Impact Metric</span>
+                <span id="modal-metric" class="text-base font-bold text-emerald-400 font-mono"></span>
+            </div>
+            <p id="modal-details" class="text-zinc-300 text-sm leading-relaxed"></p>
+            <div class="flex gap-3 pt-4 border-t border-zinc-800">
+                <a id="modal-link" href="#" target="_blank" class="hidden flex-grow bg-emerald-400 hover:bg-emerald-300 text-zinc-950 font-bold text-xs py-3 rounded-xl uppercase tracking-wider text-center">Visit Deployment Link ↗</a>
+                <button onclick="closeProjectModal()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 px-6 py-3 rounded-xl text-xs uppercase font-bold transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-1">
+                <h5 class="text-sm font-bold text-white uppercase tracking-wider font-mono">Ethan Comley Portfolio System</h5>
+                <p class="text-xs text-zinc-500 leading-relaxed">Designed completely custom for free hosting on Cloudflare Pages. Secure, fast, and optimized.</p>
+            </div>
+            <div class="text-xs text-zinc-500 font-mono"><span>© 2026 Ethan Comley • Greenville, SC</span></div>
+        </div>
+    </footer>
+
+    <script>
+        const projectData = {
+            smileys: {
+                title: "Smiley's Infusions Custom Store", tag: "Creative Direction & E-Commerce",
+                metric: "Launched Smiley's Electric Lemonade Brand", link: "https://drinksmileys.com",
+                details: "Built drinksmileys.com from the ground up, directing the creative packaging suite (including the official Smiley's Electric Lemonade can), icons, and setting parameters. Strategized digital marketing, cloud tracking, and technical operations layouts for dynamic in-person deployments."
+            },
+            matrix: {
+                title: "6AM Internal Asset Matrix", tag: "Operations / IT Solutions",
+                metric: "Saved 12+ hours/week in IT audits", link: "",
+                details: "Built to streamline the IT solutions pipeline across 6AM City's digital ecosystem. Features advanced search arrays, automated software license audits, and customized visual pipelines for immediate hardware shipping deployment tracking."
+            },
+            sentry: {
+                title: "Sentry Core System Audit", tag: "Information Security",
+                metric: "Protects 130+ company machines", link: "",
+                details: "Allows IT directors to query active user profiles, verify hardware health parameters, and check patch integrity algorithms against strict internal organizational compliance parameters."
+            }
+        };
+        function openProjectModal(key) {
+            const data = projectData[key];
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-tag').innerText = data.tag;
+            document.getElementById('modal-metric').innerText = data.metric;
+            document.getElementById('modal-details').innerText = data.details;
+            const linkBtn = document.getElementById('modal-link');
+            if (data.link) { linkBtn.href = data.link; linkBtn.classList.remove('hidden'); } else { linkBtn.classList.add('hidden'); }
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+        function closeProjectModal() { document.getElementById('project-modal').classList.add('hidden'); }
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const success = document.getElementById('form-success');
+            success.classList.remove('hidden');
+            setTimeout(() => {
+                success.classList.add('hidden');
+                document.getElementById('form-name').value = '';
+                document.getElementById('form-message').value = '';
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
