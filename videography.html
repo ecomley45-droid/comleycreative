@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videography Portfolio | Comley Creative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        .wip-stripes {
+            background-image: repeating-linear-gradient(45deg, rgba(251,191,36,0.9) 0 18px, rgba(24,24,27,0.9) 18px 36px);
+            background-size: 51px 51px;
+            animation: wipStripeMove 1.8s linear infinite;
+        }
+        @keyframes wipStripeMove { from { background-position: 0 0; } to { background-position: 51px 0; } }
+
+        .wip-hammer { display: inline-block; transform-origin: 85% 85%; animation: wipHammer 1s ease-in-out infinite; }
+        @keyframes wipHammer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(-30deg); }
+        }
+
+        .wip-cone { display: inline-block; animation: wipBounce 1.4s ease-in-out infinite; }
+        @keyframes wipBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        .wip-blink { animation: wipBlink 1.6s ease-in-out infinite; }
+        @keyframes wipBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.45; }
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-400 selection:text-zinc-950 relative min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <div class="absolute top-0 right-10 w-96 h-96 bg-amber-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <header class="sticky top-0 z-30 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-zinc-950 font-black text-xl shadow-lg shadow-emerald-500/10">
+                    EC
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-widest text-white uppercase">Ethan Comley</h1>
+                    <span class="text-zinc-500 text-xs font-mono block -mt-1">Comley Creative Studio</span>
+                </div>
+            </div>
+            <nav class="flex flex-wrap items-center gap-1.5 bg-zinc-900/50 p-1 rounded-xl border border-zinc-800">
+                <a href="index.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Tech & Web</a>
+                <a href="photography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Photography</a>
+                <a href="videography.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-amber-400 text-zinc-950 shadow-md shadow-amber-400/20">Videography</a>
+                <a href="resume.html" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Resume Profile</a>
+                <a href="index.html#contact" class="px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 text-zinc-400 hover:text-white hover:bg-zinc-800/50">Inquire</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 w-full flex-grow space-y-12 animate-fadeIn">
+
+        <div class="relative overflow-hidden rounded-2xl border-2 border-amber-400/60 bg-zinc-900/60 shadow-lg shadow-amber-500/5">
+            <div class="wip-stripes h-1.5 w-full"></div>
+            <div class="px-6 py-5 flex items-center gap-4">
+                <span class="wip-hammer text-3xl">🔨</span>
+                <div class="flex-grow">
+                    <p class="text-amber-400 font-mono text-xs uppercase tracking-widest font-bold wip-blink">🚧 Page Under Construction 🚧</p>
+                    <p class="text-zinc-300 text-sm mt-1 leading-relaxed">This reel is still being cut together — new footage, real projects, and a proper showreel are on the way. Thanks for your patience!</p>
+                </div>
+                <span class="wip-cone text-3xl hidden sm:inline-block">🚧</span>
+            </div>
+            <div class="wip-stripes h-1.5 w-full"></div>
+        </div>
+
+        <div class="max-w-2xl space-y-4">
+            <span class="text-xs uppercase font-mono tracking-widest text-amber-400 font-bold px-3 py-1 bg-amber-500/10 rounded-full inline-block">Production & Assembly</span>
+            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">Cinematography, Directing & Editing</h2>
+            <p class="text-zinc-400 text-sm md:text-base leading-relaxed">Combining high-production camera operations with professional color grading suites and audio synchronization models for commercial advertising and organizational media streams.</p>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-1">
+                <h5 class="text-sm font-bold text-white uppercase tracking-wider font-mono">Ethan Comley Portfolio System</h5>
+                <p class="text-xs text-zinc-500 leading-relaxed">Designed completely custom for free hosting on Cloudflare Pages. Secure, fast, and optimized.</p>
+            </div>
+            <div class="text-xs text-zinc-500 font-mono"><span>© 2026 Ethan Comley • Greenville, SC</span></div>
+        </div>
+    </footer>
+
+</body>
+</html>
